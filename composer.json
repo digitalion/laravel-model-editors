@@ -1,0 +1,43 @@
+{
+    "name": "digitalion/laravel-model-editors",
+    "description": "Tracker of users creating, editing or deleting the model",
+    "type": "library",
+    "homepage": "https://github.com/digitalion/laravel-model-editors",
+    "license": "MIT",
+    "prefer-stable": true,
+    "keywords": [
+        "digitalion",
+        "laravel",
+        "artisan",
+        "model",
+        "editors",
+        "destroyer",
+        "created_by",
+        "updated_by",
+        "deleted_by"
+    ],
+    "authors": [
+        {
+            "name": "Digitalion",
+            "email": "dev@digitalion.it",
+            "homepage": "https://digitalion.it",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "illuminate/support": ">=6"
+    },
+    "autoload": {
+          "psr-4": {
+              "Digitalion\\LaravelModelEditors\\": "src/"
+          }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Digitalion\\LaravelModelEditors\\LaravelModelEditorsServiceProvider",
+                "Digitalion\\LaravelModelEditors\\Providers\\DatabaseServiceProvider"
+            ]
+        }
+    }
+}
